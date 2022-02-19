@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "marvel-cards": "apps/marvel-cards",
+    "marvel-cards-e2e": "apps/marvel-cards-e2e"
+  }
+}
