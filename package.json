@@ -7,7 +7,9 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "lint": "npx eslint apps/marvel-cards/src/**/*.ts",
+    "lint:fix": "npx eslint apps/marvel-cards/src/**/*.ts --fix"
   },
   "private": true,
   "dependencies": {
