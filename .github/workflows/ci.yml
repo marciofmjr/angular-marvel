@@ -1,7 +1,7 @@
 name: CI/CD
 on: [push]
 jobs:
-    CI-CD:
+    CI:
         runs-on: ubuntu-latest
 
         steps:
@@ -29,4 +29,6 @@ jobs:
               run: npm run test
 
             - name: e2e
-              run: npm run test:e2e
+              uses: cypress-io/github-action@v2
+              with:
+                start: npm run test:e2e

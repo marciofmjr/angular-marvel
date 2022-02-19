@@ -10,7 +10,7 @@ An app to study Angular and modern web features
 I'll use all this features in this project
 
 #### Common
-- [ ] nx
+- [x] nx
 - [ ] modules
 - [ ] components
 - [ ] services
@@ -39,7 +39,7 @@ I'll use all this features in this project
 - [ ] service test
 - [ ] pipe test
 - [ ] directive test
-- [ ] cypress
+- [x] cypress
 
 #### Docs
 - [ ] storybook
@@ -47,8 +47,8 @@ I'll use all this features in this project
 #### Others
 - [x] ESLint
 - [x] Husky
-- [ ] commitizen
-- [ ] CI/CD
+- [x] commitizen
+- [x] CI/CD
 
 
 # AngularMarvel
