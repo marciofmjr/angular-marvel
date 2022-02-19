@@ -40,7 +40,8 @@ I'll use all this features in this project
 - [ ] storybook
 
 #### Others
-- [ ] ESLint
+- [x] ESLint
+- [x] Husky
 - [ ] commitizen
 - [ ] CI/CD
 
