@@ -8,6 +8,8 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
+    "test:watch": "nx test --watch",
+    "test:e2e": "nx e2e marvel-cards-e2e",
     "lint": "npx eslint apps/marvel-cards/src/**/*.ts",
     "lint:fix": "npx eslint apps/marvel-cards/src/**/*.ts --fix",
     "prepare": "husky install"
