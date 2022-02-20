@@ -1,15 +1,44 @@
-<h1 class="text-2xl text-center font-bold">Login</h1>
+<h1 class="text-2xl text-center font-bold">Register</h1>
 
-<form action="" class="form">
-  <div class="input-container">
-    <input type="text" placeholder="username">
-  </div>
-  <div class="input-container">
-    <input type="password" placeholder="password">
-  </div>
-  <div class="button-container">
-    <button type="submit" class="button full">Login</button>
-  </div>
+<form #registerForm="ngForm" class="form" (ngSubmit)="onSubmit()">
+
+  <ng-container *ngIf="!success; else formSubmitted">
+    <div class="input-container">
+      <input type="text" placeholder="username" [(ngModel)]="user.username" name="username" #username="ngModel" required minlength="3">
+      <ng-container *ngIf="username.dirty || username.touched">
+        <div class="error" *ngIf="username.errors?.['required']">username is required</div>
+        <div class="error" *ngIf="username.errors?.['minlength']">username must be at least 3 characters long</div>
+      </ng-container>
+    </div>
+
+    <div class="input-container">
+      <input type="password" placeholder="password" [(ngModel)]="user.password" name="password" #password="ngModel" required minlength="3">
+      <ng-container *ngIf="password.dirty || password.touched">
+        <div class="error" *ngIf="password.errors?.['required']">password is required</div>
+        <div class="error" *ngIf="password.errors?.['minlength']">password must be at least 3 characters long</div>
+      </ng-container>
+    </div>
+
+    <div class="input-container">
+      <input type="password" placeholder="confirm password" [(ngModel)]="user.confirmPassword" name="confirmPassword"
+        #confirmPassword="ngModel" required>
+        <ng-container *ngIf="confirmPassword.dirty || confirmPassword.touched">
+          <div class="error" *ngIf="(password.value !== confirmPassword.value)">passwords must be equal</div>
+        </ng-container>
+    </div>
+
+    <div class="button-container">
+      <button type="submit" class="button full" [disabled]="!registerForm.valid || password.value !== confirmPassword.value">Create account</button>
+    </div>
+  </ng-container>
+
+  <ng-template #formSubmitted>
+    <div class="bg-green-200 w-full p-4 text-center">
+      Account <span class="font-bold">{{ user.username }}</span> created successfully
+      <a class="link full" [routerLink]="['/auth/login']">Go to login</a>
+    </div>
+  </ng-template>
+
 </form>
 
 <a class="link" [routerLink]="['/auth/login']">Already have an account? go back to login</a>
