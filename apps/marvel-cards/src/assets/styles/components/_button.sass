@@ -1,0 +1,20 @@
+.button-container
+  display: flex
+  width: 100%
+
+.button
+  padding: $button-padding
+  border-radius: $element-border-radius
+  height: $element-height
+  box-sizing: border-box
+  line-height: calc(#{$element-height} - 2px)
+  background-color: $primary-color
+  font-weight: bold
+  text-align: center
+  min-width: 120px
+
+  &.full
+    width: 100%
+
+.button:not(:last-child)
+  margin-right: 6px
