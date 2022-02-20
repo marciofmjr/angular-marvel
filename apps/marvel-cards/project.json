@@ -18,7 +18,15 @@
           "apps/marvel-cards/src/favicon.ico",
           "apps/marvel-cards/src/assets"
         ],
-        "styles": ["apps/marvel-cards/src/styles.sass"],
+        "styles": [
+          "apps/marvel-cards/src/styles.sass",
+          "apps/marvel-cards/src/assets/main.sass"
+        ],
+        "stylePreprocessorOptions": {
+          "includePaths": [
+            "apps/marvel-cards/src/assets"
+          ]
+        },
         "scripts": []
       },
       "configurations": {
