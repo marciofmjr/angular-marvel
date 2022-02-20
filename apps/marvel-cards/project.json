@@ -20,7 +20,7 @@
         ],
         "styles": [
           "apps/marvel-cards/src/styles.sass",
-          "apps/marvel-cards/src/assets/main.sass"
+          "apps/marvel-cards/src/assets/styles/main.sass"
         ],
         "stylePreprocessorOptions": {
           "includePaths": [
