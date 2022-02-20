@@ -1,3 +1,18 @@
-<p>login works!</p>
+<h1 class="text-2xl text-center font-bold">Register</h1>
 
-<a [routerLink]="['/auth/register']">go to register</a>
+<form action="" class="form">
+  <div class="input-container">
+    <input type="text" placeholder="username">
+  </div>
+  <div class="input-container">
+    <input type="password" placeholder="password">
+  </div>
+  <div class="input-container">
+    <input type="password" placeholder="confirm password">
+  </div>
+  <div class="button-container">
+    <button type="submit" class="button full">Create account</button>
+  </div>
+</form>
+
+<a class="link" [routerLink]="['/auth/register']">Don't have account? create now</a>
