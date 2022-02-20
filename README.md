@@ -44,6 +44,9 @@ I'll use all this features in this project
 #### Docs
 - [ ] storybook
 
+#### Translate
+- [ ] translate
+
 #### Others
 - [x] ESLint
 - [x] Husky

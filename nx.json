@@ -32,7 +32,7 @@
   },
   "generators": {
     "@nrwl/angular:application": {
-      "style": "scss",
+      "style": "sass",
       "linter": "eslint",
       "unitTestRunner": "jest",
       "e2eTestRunner": "cypress"
@@ -42,7 +42,7 @@
       "unitTestRunner": "jest"
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "sass"
     }
   },
   "defaultProject": "marvel-cards"
