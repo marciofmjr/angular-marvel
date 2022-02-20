@@ -54,13 +54,16 @@ I'll use all this features in this project
 - [x] CI/CD
 
 
-## References
+# References
 
 ### angular folder structure
 https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7
 
 ### sass 7-1 pattern
 https://gist.github.com/rveitch/84cea9650092119527bc
+
+### json server
+https://duncanhunter.gitbook.io/enterprise-angular-applications-with-ngrx-and-nx/introduction/4-add-json-server
 
 # AngularMarvel
 
