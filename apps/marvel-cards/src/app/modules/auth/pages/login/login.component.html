@@ -1,15 +1,42 @@
 <h1 class="text-2xl text-center font-bold">Login</h1>
 
-<form action="" class="form">
-  <div class="input-container">
-    <input type="text" placeholder="username">
-  </div>
-  <div class="input-container">
-    <input type="password" placeholder="password">
-  </div>
-  <div class="button-container">
-    <button type="submit" class="button full">Login</button>
-  </div>
+<form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <ng-container *ngIf="!success; else formSubmitted">
+
+    <div class="input-container">
+      <input type="text" placeholder="username" formControlName="username">
+      <ng-container *ngIf="loginForm.get('username')?.dirty || loginForm.get('username')?.touched">
+        <div class="error" *ngIf="loginForm.get('username')?.invalid">username is required</div>
+      </ng-container>
+    </div>
+
+    <div class="input-container">
+      <input type="password" placeholder="password" formControlName="password">
+      <ng-container *ngIf="loginForm.get('password')?.dirty || loginForm.get('password')?.touched">
+        <div class="error" *ngIf="loginForm.get('password')?.invalid">password is required</div>
+      </ng-container>
+    </div>
+
+    <div class="button-container">
+      <button type="submit" class="button full" [disabled]="!loginForm.valid">Login</button>
+    </div>
+
+  </ng-container>
+
+  <ng-template #formSubmitted>
+    <div class="bg-green-200 w-full p-4 text-center">
+      Welcome <span class="font-bold">{{ loginForm.get('username')?.value }}</span>
+
+      <div class="link-container center">
+        <a class="link" [routerLink]="['/dashboard']">Go to dashboard</a>
+      </div>
+    </div>
+  </ng-template>
+
+
 </form>
 
-<a class="link" [routerLink]="['/auth/register']">Don't have account? create now</a>
+<div class="link-container center">
+  <a class="link" [routerLink]="['/auth/register']">Don't have account? create now</a>
+</div>

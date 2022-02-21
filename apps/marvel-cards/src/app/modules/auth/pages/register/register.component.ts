@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 
 import { RegisterApiService } from './../../services/register.api.service'
-import { Register } from './../../models/Register.model'
+import { Register } from './../../models/register.model'
 
 @Component({
   selector: 'angular-marvel-register',

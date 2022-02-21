@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
-    "start": "nx serve -o",
+    "start": "nx serve -o --hmr",
     "start:db": "npx json-server server/db.json --watch --port 4321",
     "dev": "concurrently \"npm run start:db\" \"npm run start\"",
     "build": "nx build",

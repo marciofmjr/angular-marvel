@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs'
 import { environment } from '../../../../environments/environment'
-import { Register } from '../models/Register.model'
+import { Register } from '../models/register.model'
 import { ApiService } from '../../../shared/api/api.service'
 import { Injectable } from '@angular/core'
 
