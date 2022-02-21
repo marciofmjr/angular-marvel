@@ -1,5 +1,5 @@
+import { LoginApiService } from './../../services/login.api.service'
 import { ReactiveFormsModule } from '@angular/forms'
-import { HttpClientModule } from '@angular/common/http'
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { RouterTestingModule } from '@angular/router/testing'
 
@@ -12,9 +12,11 @@ describe('LoginComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ LoginComponent ],
+      providers: [
+        { provide: LoginApiService, useValue: jest.fn() }
+      ],
       imports: [
         ReactiveFormsModule,
-        HttpClientModule,
         RouterTestingModule.withRoutes([]) ]
     })
       .compileComponents()
