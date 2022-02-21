@@ -25,15 +25,12 @@
   </ng-container>
 
   <ng-template #formSubmitted>
-    <div class="bg-green-200 w-full p-4 text-center">
-      Welcome <span class="font-bold">{{ loginForm.get('username')?.value }}</span>
-
-      <div class="link-container center">
-        <a class="link" [routerLink]="['/dashboard']">Go to dashboard</a>
-      </div>
-    </div>
+    <angular-marvel-message
+      [message]="'Welcome ' + loginForm.get('username')?.value"
+      linkText="Go to dashboard"
+      linkUrl="/dashboard">
+    </angular-marvel-message>
   </ng-template>
-
 
 </form>
 
