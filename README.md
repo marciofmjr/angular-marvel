@@ -11,24 +11,24 @@ I'll use all this features in this project
 
 #### Common
 - [x] nx
-- [ ] modules
-- [ ] components
-- [ ] services
+- [x] modules
+- [x] components
+- [x] services
 - [ ] pipes
 - [ ] directives
 - [ ] custom pipes
 - [ ] custom directives
 - [ ] resolvers
 - [ ] guards
-- [ ] lazy loading
+- [x] lazy loading
 
 #### Custom
 - [ ] custom pipe
 - [ ] custom directive
 
 #### Forms
-- [ ] template driven forms
-- [ ] reactive forms
+- [x] template driven forms
+- [x] reactive forms
 
 #### State
 - [ ] NgRx
@@ -39,7 +39,7 @@ I'll use all this features in this project
 - [ ] service test
 - [ ] pipe test
 - [ ] directive test
-- [x] cypress
+- [ ] cypress
 
 #### Docs
 - [ ] storybook
