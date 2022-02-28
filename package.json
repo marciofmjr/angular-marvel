@@ -6,7 +6,7 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main",
     "start": "nx serve -o --hmr",
-    "start:db": "npx json-server server/db.json --watch --port 4321",
+    "start:db": "npx json-server-relationship server/db.json --watch --port 4321",
     "dev": "concurrently \"npm run start:db\" \"npm run start\"",
     "build": "nx build",
     "test": "nx test",
@@ -14,7 +14,8 @@
     "test:e2e": "nx e2e marvel-cards-e2e",
     "lint": "npx eslint apps/marvel-cards/src/**/*.ts",
     "lint:fix": "npx eslint apps/marvel-cards/src/**/*.ts --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "reset:db": "rm -rf server/db.json; cp server/db_sample.json server/db.json;"
   },
   "private": true,
   "dependencies": {
@@ -61,7 +62,7 @@
     "husky": "^7.0.4",
     "jest": "27.2.3",
     "jest-preset-angular": "11.1.1",
-    "json-server": "^0.17.0",
+    "json-server-relationship": "^0.14.5",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "tailwindcss": "^3.0.2",

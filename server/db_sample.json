@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "id": "911d71e9-e3a4-4587-9161-1a3ec6d69dcd",
+      "username": "admin",
+      "password": "123"
+    }
+  ],
+  "teams": [
+    {
+      "id": "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
+      "name": "Avengers"
+    },
+    {
+      "id": "3caac653-d730-45d1-ab00-77aaf17cf5be",
+      "name": "New Avengers"
+    },
+    {
+      "id": "74bf3e89-c715-4213-92cd-9c5f49261f49",
+      "name": "Web-Warriors"
+    },
+    {
+      "id": "43962bf8-5158-44f4-9804-86cd6bd681c8",
+      "name": "Fantastic Four"
+    },
+    {
+      "id": "12b77fa4-9aa6-4eaa-8642-72bf1c036ef8",
+      "name": "X-Men"
+    },
+    {
+      "id": "2e2bdca0-efcb-4f41-98ac-3cf7f0f4f51e",
+      "name": "Mighty Avengers"
+    },
+    {
+      "id": "d05d4a21-2851-4863-a0cf-4be2a787458d",
+      "name": "Heroes For Hire"
+    },
+    {
+      "id": "3349a9fb-5e44-475d-baff-841551203af0",
+      "name": "Avengers West Coast"
+    },
+    {
+      "id": "898aa04b-5301-4123-9f0d-3a30f10bed28",
+      "name": "Illuminati"
+    },
+    {
+      "id": "1aa37ff1-f135-4c48-a69c-ff6c9ade4f4c",
+      "name": "S.H.I.E.L.D"
+    }
+  ],
+  "characters": [
+    {
+      "id": "637306df-550f-408f-9344-d7fc7555ebd8",
+      "name": "Spider-Man",
+      "identity": "Peter Parker",
+      "bio": "With amazing spider-like abilities, teenage science whiz Peter Parker fights crime and dreams of becoming an Avenger as Spider-Man",
+      "skill": {
+        "durability": 3,
+        "energy": 1,
+        "fighting": 4,
+        "intelligence": 4,
+        "speed": 3,
+        "strength": 4
+      },
+      "teamId": [
+        "d05d4a21-2851-4863-a0cf-4be2a787458d",
+        "2e2bdca0-efcb-4f41-98ac-3cf7f0f4f51e",
+        "12b77fa4-9aa6-4eaa-8642-72bf1c036ef8",
+        "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
+        "74bf3e89-c715-4213-92cd-9c5f49261f49",
+        "43962bf8-5158-44f4-9804-86cd6bd681c8",
+        "3caac653-d730-45d1-ab00-77aaf17cf5be"
+      ]
+    },
+    {
+      "id": "92c7d926-c29f-49a1-8135-f1c0f0b2f8bc",
+      "name": "Iron Man",
+      "identity": "Tony Stark",
+      "bio": "Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger",
+      "skill": {
+        "durability": 6,
+        "energy": 6,
+        "fighting": 4,
+        "intelligence": 6,
+        "speed": 5,
+        "strength": 6
+      },
+      "teamId": [
+        "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
+        "3349a9fb-5e44-475d-baff-841551203af0",
+        "898aa04b-5301-4123-9f0d-3a30f10bed28",
+        "1aa37ff1-f135-4c48-a69c-ff6c9ade4f4c"
+      ]
+    }
+  ]
+}
