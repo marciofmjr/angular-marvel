@@ -9,8 +9,7 @@ import { Character } from '../../models/character.model'
 })
 export class CharacterListComponent {
 
-  @Input() characters!: Observable<Character[]>
+  @Input() characters?: Observable<Character[]>
   @Input() title = ''
-
-  constructor() { }
+  @Input() seeMore!: string
 }

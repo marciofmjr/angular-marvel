@@ -1,3 +1,4 @@
+import { CharacterParams } from './../../models/character-params.model'
 import { Observable } from 'rxjs'
 import { CharacterApiService } from './../../services/character.api.service'
 import { Component, OnInit } from '@angular/core'
@@ -10,7 +11,8 @@ import { Character } from '../../models/character.model'
 })
 export class DashboardComponent implements OnInit {
 
-  characters$!: Observable<Character[]>
+  heroes$!: Observable<Character[]>
+  villains$!: Observable<Character[]>
 
   constructor(private characterApiService: CharacterApiService) { }
 
@@ -18,9 +20,15 @@ export class DashboardComponent implements OnInit {
     this.getCharacters()
   }
 
+  getOptions(type?: string): CharacterParams {
+    const options = <CharacterParams> { expand: 'team', 'page': 1, 'limit': 4 }
+    if (type) { options.type = type }
+    return options
+  }
+
   getCharacters() {
-    const options = { expand: 'team', 'page': 1, 'limit': 4 }
-    this.characters$ = this.characterApiService.list(options)
+    this.heroes$ = this.characterApiService.list(this.getOptions('hero'))
+    this.villains$ = this.characterApiService.list(this.getOptions('villain'))
   }
 
 }

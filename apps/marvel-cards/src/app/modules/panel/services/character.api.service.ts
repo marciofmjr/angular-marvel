@@ -12,7 +12,7 @@ export class CharacterApiService {
 
   constructor(private apiService: ApiService) {}
 
-  list(data: any): Observable<Character[]> {
+  list(data?: any): Observable<Character[]> {
     return this.apiService.get(`${environment.apiBaseUrl}${this.PATH}`, data)
   }
 

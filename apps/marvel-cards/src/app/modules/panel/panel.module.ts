@@ -9,7 +9,8 @@ import { HeroesComponent } from './pages/heroes/heroes.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { CharacterListComponent } from './components/character-list/character-list.component';
 import { CharacterListItemComponent } from './components/character-list-item/character-list-item.component';
-import { CharacterListItemPictureComponent } from './components/character-list-item-picture/character-list-item-picture.component'
+import { CharacterListItemPictureComponent } from './components/character-list-item-picture/character-list-item-picture.component';
+import { VillainsComponent } from './pages/villains/villains.component'
 
 
 
@@ -23,7 +24,8 @@ import { CharacterListItemPictureComponent } from './components/character-list-i
     ProfileComponent,
     CharacterListComponent,
     CharacterListItemComponent,
-    CharacterListItemPictureComponent
+    CharacterListItemPictureComponent,
+    VillainsComponent
   ],
   imports: [
     CommonModule,

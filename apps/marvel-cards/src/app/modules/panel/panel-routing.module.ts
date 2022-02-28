@@ -1,3 +1,4 @@
+import { VillainsComponent } from './pages/villains/villains.component'
 import { HeroesComponent } from './pages/heroes/heroes.component'
 import { NgModule } from '@angular/core'
 import { DashboardComponent } from './pages/dashboard/dashboard.component'
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'heroes',
         component: HeroesComponent
+      },
+      {
+        path: 'villains',
+        component: VillainsComponent
       }
     ]
   }

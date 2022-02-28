@@ -75,6 +75,7 @@
         "speed": 3,
         "strength": 4
       },
+      "type": "hero",
       "teamId": [
         "d05d4a21-2851-4863-a0cf-4be2a787458d",
         "2e2bdca0-efcb-4f41-98ac-3cf7f0f4f51e",
@@ -99,6 +100,7 @@
         "speed": 5,
         "strength": 6
       },
+      "type": "hero",
       "teamId": [
         "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
         "3349a9fb-5e44-475d-baff-841551203af0",
@@ -120,6 +122,7 @@
         "speed": 2,
         "strength": 3
       },
+      "type": "hero",
       "teamId": [
         "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
         "5d7cf8f9-a9ae-4676-985f-c82d85144dba"
@@ -139,6 +142,7 @@
         "speed": 7,
         "strength": 7
       },
+      "type": "hero",
       "teamId": [
         "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
         "aa56052f-9358-4e0b-80e4-9abaa9e2ccb5"
@@ -158,6 +162,7 @@
         "speed": 3,
         "strength": 7
       },
+      "type": "hero",
       "teamId": [
         "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
         "d1fedad1-b82d-4ed7-9088-b19e1a2d94b9"
@@ -177,6 +182,7 @@
         "speed": 2,
         "strength": 2
       },
+      "type": "hero",
       "teamId": [
         "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
         "3349a9fb-5e44-475d-baff-841551203af0",
@@ -197,6 +203,7 @@
         "speed": 2,
         "strength": 3
       },
+      "type": "hero",
       "teamId": [
         "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
         "5d7cf8f9-a9ae-4676-985f-c82d85144dba",
@@ -217,6 +224,7 @@
         "speed": 3,
         "strength": 4
       },
+      "type": "hero",
       "teamId": []
     },
     {
@@ -233,6 +241,75 @@
         "speed": 3,
         "strength": 5
       },
+      "type": "villain",
+      "teamId": []
+    },
+    {
+      "id": "aa27de92-d0bb-4bbd-8c0c-2cdd6dc603d3",
+      "name": "Doctor Doom",
+      "slug": "doctor_doom",
+      "identity": "Victor Von Doom",
+      "bio": "The egostical and maniacal Dr. Doom uses his brilliant scientific mind to augment his own power and quest for control",
+      "skill": {
+        "durability": 6,
+        "energy": 6,
+        "fighting": 4,
+        "intelligence": 6,
+        "speed": 5,
+        "strength": 4
+      },
+      "type": "villain",
+      "teamId": []
+    },
+    {
+      "id": "5673f4f7-ff06-4107-a728-333ec1b47f40",
+      "name": "Thanos",
+      "slug": "thanos",
+      "identity": "",
+      "bio": "Using the power of the Infinity Stones, Thanos believes he can ultimately save the universe by wiping out half of its population",
+      "skill": {
+        "durability": 6,
+        "energy": 6,
+        "fighting": 4,
+        "intelligence": 6,
+        "speed": 7,
+        "strength": 7
+      },
+      "type": "villain",
+      "teamId": []
+    },
+    {
+      "id": "ad59be35-7d79-4a83-962e-c12b5bf1fa29",
+      "name": "Magneto",
+      "slug": "magneto",
+      "identity": "Max Eisenhardt",
+      "bio": "Using his mighty ability to control magnetic fields, the one called Magneto fights to help mutants replace humans as the world's dominant species",
+      "skill": {
+        "durability": 2,
+        "energy": 6,
+        "fighting": 4,
+        "intelligence": 5,
+        "speed": 5,
+        "strength": 2
+      },
+      "type": "villain",
+      "teamId": []
+    },
+    {
+      "id": "593133a6-5eda-45a5-bca2-3fb1dc1b58c9",
+      "name": "Galactus",
+      "slug": "galactus",
+      "identity": "Galan",
+      "bio": "Consumer of worlds and destroyer of planets, Galactus roams the cosmos with one goal in mind. This week on Marvel 101, witness the utter destruction wrought by one of the Marvel Universe’s most powerful beings",
+      "skill": {
+        "durability": 7,
+        "energy": 7,
+        "fighting": 7,
+        "intelligence": 7,
+        "speed": 7,
+        "strength": 7
+      },
+      "type": "villain",
       "teamId": []
     }
   ]
