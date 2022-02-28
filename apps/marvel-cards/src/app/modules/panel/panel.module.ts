@@ -5,7 +5,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component'
 import { PanelComponent } from './panel.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { HeroesComponent } from './pages/heroes/heroes.component'
+import { HeroesComponent } from './pages/heroes/heroes.component';
+import { ProfileComponent } from './components/profile/profile.component'
 
 
 
@@ -15,7 +16,8 @@ import { HeroesComponent } from './pages/heroes/heroes.component'
     PanelComponent,
     SidebarComponent,
     MenuComponent,
-    HeroesComponent
+    HeroesComponent,
+    ProfileComponent
   ],
   imports: [
     CommonModule,
