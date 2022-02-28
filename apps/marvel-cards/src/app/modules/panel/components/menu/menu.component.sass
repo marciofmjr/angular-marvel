@@ -1,0 +1,47 @@
+@import styles/main
+
+angular-marvel-menu
+  width: 100%
+
+ul
+  display: flex
+  flex-wrap: wrap
+
+li
+  display: flex
+  width: 100%
+
+li a
+  position: relative
+  display: flex
+  width: 90%
+  padding: 12px 4px 12px 28px
+
+li a span
+  z-index: 2
+
+li a:after
+  position: absolute
+  width: 100%
+  height: 100%
+  background: $red
+  content: ""
+  border-top-right-radius: 28px
+  border-bottom-right-radius: 28px
+  z-index: 1
+  top: 50%
+  left: 0
+  transform: translate(-100%, -50%)
+  transition: 0.5s
+
+li a.active
+  cursor: default
+
+li a.active span
+  color: #fff
+
+li a.active:after
+  transform: translate(0, -50%)
+
+li a:not(.active):hover
+  color: $red

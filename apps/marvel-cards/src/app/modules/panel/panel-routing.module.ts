@@ -1,3 +1,4 @@
+import { HeroesComponent } from './pages/heroes/heroes.component'
 import { NgModule } from '@angular/core'
 import { DashboardComponent } from './pages/dashboard/dashboard.component'
 import { PanelComponent } from './panel.component'
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         component: DashboardComponent
+      },
+      {
+        path: 'heroes',
+        component: HeroesComponent
       }
     ]
   }

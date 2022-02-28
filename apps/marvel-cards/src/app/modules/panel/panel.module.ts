@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { DashboardComponent } from './pages/dashboard/dashboard.component'
 import { PanelComponent } from './panel.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component'
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { HeroesComponent } from './pages/heroes/heroes.component'
 
 
 
@@ -11,7 +13,9 @@ import { SidebarComponent } from './components/sidebar/sidebar.component'
   declarations: [
     DashboardComponent,
     PanelComponent,
-    SidebarComponent
+    SidebarComponent,
+    MenuComponent,
+    HeroesComponent
   ],
   imports: [
     CommonModule,
