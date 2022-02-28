@@ -1,0 +1,8 @@
+<h2 class="title h2" *ngIf="title">{{ title }}</h2>
+
+<div class="flex w-full flex-wrap justify-between">
+  <angular-marvel-character-list-item
+    *ngFor="let character of characters | async"
+    [character]="character">
+  </angular-marvel-character-list-item>
+</div>

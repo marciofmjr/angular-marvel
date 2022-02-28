@@ -16,6 +16,14 @@
       "name": "New Avengers"
     },
     {
+      "id": "5d7cf8f9-a9ae-4676-985f-c82d85144dba",
+      "name": "Secret Avengers"
+    },
+    {
+      "id": "3349a9fb-5e44-475d-baff-841551203af0",
+      "name": "Avengers West Coast"
+    },
+    {
       "id": "74bf3e89-c715-4213-92cd-9c5f49261f49",
       "name": "Web-Warriors"
     },
@@ -36,22 +44,27 @@
       "name": "Heroes For Hire"
     },
     {
-      "id": "3349a9fb-5e44-475d-baff-841551203af0",
-      "name": "Avengers West Coast"
-    },
-    {
       "id": "898aa04b-5301-4123-9f0d-3a30f10bed28",
       "name": "Illuminati"
     },
     {
       "id": "1aa37ff1-f135-4c48-a69c-ff6c9ade4f4c",
       "name": "S.H.I.E.L.D"
+    },
+    {
+      "id": "aa56052f-9358-4e0b-80e4-9abaa9e2ccb5",
+      "name": "Heralds of Galactus"
+    },
+    {
+      "id": "d1fedad1-b82d-4ed7-9088-b19e1a2d94b9",
+      "name": "Defenders"
     }
   ],
   "characters": [
     {
       "id": "637306df-550f-408f-9344-d7fc7555ebd8",
       "name": "Spider-Man",
+      "slug": "spider_man",
       "identity": "Peter Parker",
       "bio": "With amazing spider-like abilities, teenage science whiz Peter Parker fights crime and dreams of becoming an Avenger as Spider-Man",
       "skill": {
@@ -75,6 +88,7 @@
     {
       "id": "92c7d926-c29f-49a1-8135-f1c0f0b2f8bc",
       "name": "Iron Man",
+      "slug": "iron_man",
       "identity": "Tony Stark",
       "bio": "Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger",
       "skill": {
@@ -91,6 +105,135 @@
         "898aa04b-5301-4123-9f0d-3a30f10bed28",
         "1aa37ff1-f135-4c48-a69c-ff6c9ade4f4c"
       ]
+    },
+    {
+      "id": "01614fbc-91fb-419c-9232-b9122e2bf144",
+      "name": "Captain America",
+      "slug": "captain_america",
+      "identity": "Steve Rogers",
+      "bio": "From the dark days of world war to the explosive challenges of today, Super-Soldier Captain America stands ready as a shining sentinel of liberty to shield the oppressed and fight for freedom everywhere",
+      "skill": {
+        "durability": 3,
+        "energy": 1,
+        "fighting": 6,
+        "intelligence": 3,
+        "speed": 2,
+        "strength": 3
+      },
+      "teamId": [
+        "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
+        "5d7cf8f9-a9ae-4676-985f-c82d85144dba"
+      ]
+    },
+    {
+      "id": "f0c289fc-8537-4b21-8c60-48cd0185d47c",
+      "name": "Thor",
+      "slug": "thor",
+      "identity": "Thor Odinson",
+      "bio": "Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and beyond",
+      "skill": {
+        "durability": 6,
+        "energy": 6,
+        "fighting": 4,
+        "intelligence": 2,
+        "speed": 7,
+        "strength": 7
+      },
+      "teamId": [
+        "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
+        "aa56052f-9358-4e0b-80e4-9abaa9e2ccb5"
+      ]
+    },
+    {
+      "id": "b3968d52-8365-46f2-bc80-4f287df1557b",
+      "name": "Hulk",
+      "slug": "hulk",
+      "identity": "Bruce Banner",
+      "bio": "Exposed to heavy doses of gamma radiation, scientist Bruce Banner transforms into the mean, green rage machine called the Hulk",
+      "skill": {
+        "durability": 7,
+        "energy": 5,
+        "fighting": 4,
+        "intelligence": 6,
+        "speed": 3,
+        "strength": 7
+      },
+      "teamId": [
+        "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
+        "d1fedad1-b82d-4ed7-9088-b19e1a2d94b9"
+      ]
+    },
+    {
+      "id": "7bff5db6-3274-40dd-9ace-89659ca81768",
+      "name": "Hawkeye",
+      "slug": "hawkeye",
+      "identity": "Clint Barton",
+      "bio": "An expert marksman and fighter, Clint Barton puts his talents to good use by working for S.H.I.E.L.D. as a special agent. The archer known as Hawkeye also boasts a strong moral compass that at times leads him astray from his direct orders",
+      "skill": {
+        "durability": 2,
+        "energy": 1,
+        "fighting": 4,
+        "intelligence": 2,
+        "speed": 2,
+        "strength": 2
+      },
+      "teamId": [
+        "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
+        "3349a9fb-5e44-475d-baff-841551203af0",
+        "d1fedad1-b82d-4ed7-9088-b19e1a2d94b9"
+      ]
+    },
+    {
+      "id": "f6e4f71d-e87f-41ca-b3b7-eb47b3a51c1e",
+      "name": "Black Widow",
+      "slug": "black_widow",
+      "identity": "Natasha Romanoff",
+      "bio": "A deadly assassin is closing in on Natasha Romanoff. Now Natasha must reunite with an unlikely group of spies from her past in order to survive and stop a lethal force from being unleashed on the world",
+      "skill": {
+        "durability": 3,
+        "energy": 3,
+        "fighting": 6,
+        "intelligence": 3,
+        "speed": 2,
+        "strength": 3
+      },
+      "teamId": [
+        "f54d3006-eb35-43ef-b1f7-a6a3fad6814f",
+        "5d7cf8f9-a9ae-4676-985f-c82d85144dba",
+        "1aa37ff1-f135-4c48-a69c-ff6c9ade4f4c"
+      ]
+    },
+    {
+      "id": "43492b69-a615-4fe8-aa4a-3f3451fd421f",
+      "name": "Venom",
+      "slug": "venom",
+      "identity": "Eddie Brock",
+      "bio": "When Spider-Man acquired a living symbiote costume, he had no idea it would later spawn a major adversary. Though often a foe to the Wallcrawler, Venom does possess some kind of morality—avoiding harm to the innocent and bringing down the guilty",
+      "skill": {
+        "durability": 4,
+        "energy": 1,
+        "fighting": 2,
+        "intelligence": 2,
+        "speed": 3,
+        "strength": 4
+      },
+      "teamId": []
+    },
+    {
+      "id": "befd537a-f029-4f71-bf53-5f1d041f5634",
+      "name": "Carnage",
+      "slug": "carnage",
+      "identity": "Cletus Kasady",
+      "bio": "Carnage was once a serial killer known as Cletus Kasady, and became Carnage after merging with the offspring of the alien symbiote called Venom during a prison breakout",
+      "skill": {
+        "durability": 5,
+        "energy": 3,
+        "fighting": 4,
+        "intelligence": 4,
+        "speed": 3,
+        "strength": 5
+      },
+      "teamId": []
     }
   ]
 }

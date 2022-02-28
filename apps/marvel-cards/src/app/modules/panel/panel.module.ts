@@ -6,7 +6,10 @@ import { PanelComponent } from './panel.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { HeroesComponent } from './pages/heroes/heroes.component';
-import { ProfileComponent } from './components/profile/profile.component'
+import { ProfileComponent } from './components/profile/profile.component';
+import { CharacterListComponent } from './components/character-list/character-list.component';
+import { CharacterListItemComponent } from './components/character-list-item/character-list-item.component';
+import { CharacterListItemPictureComponent } from './components/character-list-item-picture/character-list-item-picture.component'
 
 
 
@@ -17,7 +20,10 @@ import { ProfileComponent } from './components/profile/profile.component'
     SidebarComponent,
     MenuComponent,
     HeroesComponent,
-    ProfileComponent
+    ProfileComponent,
+    CharacterListComponent,
+    CharacterListItemComponent,
+    CharacterListItemPictureComponent
   ],
   imports: [
     CommonModule,

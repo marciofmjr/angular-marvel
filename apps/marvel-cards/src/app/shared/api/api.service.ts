@@ -22,7 +22,7 @@ export class ApiService {
     return this.http.put(url, data)
   }
 
-  get(url: string, data: any): Observable<any> {
+  get(url: string, data?: any): Observable<any> {
     let params = new HttpParams()
 
     for (const key in data) {
