@@ -1,0 +1,42 @@
+@import styles/main
+
+.panel-background
+  width: 100vw
+  height: 100vh
+
+.panel
+  display: flex
+  flex-wrap: wrap
+  position: absolute
+  width: 1300px
+  max-width: calc(100vw - #{$panel-gap})
+  height: calc(100vh - #{$panel-gap})
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  background: #fff
+  border-radius: $element-border-radius
+  box-shadow: 0 0 24px 6px rgba(0, 0, 0, 0.2)
+
+.sidebar
+  position: relative
+  width: $sidebar-width
+  min-height: 100%
+  border-bottom-left-radius: $element-border-radius
+  border-top-left-radius: $element-border-radius
+  overflow: hidden
+  padding-top: $sidebar-padding
+  border-right: 1px solid #ccc
+
+.sidebar:after
+  position: absolute
+  width: 1px
+  height: 100%
+  background: #eee
+  content: ""
+  right: 0
+  top: 0
+
+.main
+  width: calc(100% - #{$sidebar-width})
+  min-height: 100%
