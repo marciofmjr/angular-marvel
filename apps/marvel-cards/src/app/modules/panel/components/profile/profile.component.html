@@ -1,7 +1,7 @@
-<div class="flex w-full items-center">
+<div class="flex w-full items-center" *ngIf="username">
   <div class="pic w-14 h-14 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
   <div class="pl-2">
-    <span>Hey Marcio</span>
+    <span>Hey {{ username }}</span>
     <a (click)="logout()" class="flex w-full text-rose-600 font-bold cursor-pointer">Logout</a>
   </div>
 </div>

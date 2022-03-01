@@ -1,3 +1,4 @@
+import { NavigateService } from './../../../../core/services/navigate.service'
 import { LoginApiService } from './../../services/login.api.service'
 import { Login } from './../../models/login.model'
 import { Component, OnInit } from '@angular/core'
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private loginApiService: LoginApiService
+    private loginApiService: LoginApiService,
+    private navigateService: NavigateService
   ) { }
 
   ngOnInit(): void {
@@ -28,8 +30,11 @@ export class LoginComponent implements OnInit {
   onSubmit(): void {
     const login = <Login>this.loginForm.value
     this.loginApiService.login(login).subscribe(user => {
-      if (user[0].id) {
+      if (user[0]?.id) {
         this.success = true
+        setTimeout(() => {
+          this.navigateService.to('dashboard')
+        }, 1000)
       }
     })
   }
