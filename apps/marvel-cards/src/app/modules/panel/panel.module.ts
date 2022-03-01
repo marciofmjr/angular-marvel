@@ -10,7 +10,9 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { CharacterListComponent } from './components/character-list/character-list.component';
 import { CharacterListItemComponent } from './components/character-list-item/character-list-item.component';
 import { CharacterListItemPictureComponent } from './components/character-list-item-picture/character-list-item-picture.component';
-import { VillainsComponent } from './pages/villains/villains.component'
+import { VillainsComponent } from './pages/villains/villains.component';
+import { CharacterListItemSkillsComponent } from './components/character-list-item-skills/character-list-item-skills.component';
+import { SkillComponent } from './components/skill/skill.component'
 
 
 
@@ -25,7 +27,9 @@ import { VillainsComponent } from './pages/villains/villains.component'
     CharacterListComponent,
     CharacterListItemComponent,
     CharacterListItemPictureComponent,
-    VillainsComponent
+    VillainsComponent,
+    CharacterListItemSkillsComponent,
+    SkillComponent
   ],
   imports: [
     CommonModule,

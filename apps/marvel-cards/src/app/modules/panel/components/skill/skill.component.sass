@@ -1,0 +1,63 @@
+$passive-color: #eee
+
+:host
+  max-width: 100%
+
+.container
+  position: relative
+  width: 30px
+  height: 30px
+
+.value
+  position: absolute
+  transform: translate(-50%, -50%)
+  left: 50%
+  top: 50%
+  z-index: 2
+  font-size: 12px
+  color: #aaa
+
+.progress
+  width: 100%
+  height: 100%
+  max-width: 100%
+  box-sizing: border-box
+  background-origin: border-box
+  background-clip: content-box, border-box
+  border: 4px solid transparent
+  border-radius: 50%
+  color: #FFF
+  display: grid
+  place-items: center
+  place-content: center
+
+  @for $i from 1 through 7
+    &.durability
+      $active-color: #3b82f6
+      &.progress-#{$i}
+        background-image: linear-gradient(#fff, #fff), conic-gradient($active-color calc(((#{$i} * 100) / 7) * 1%), $passive-color calc(((#{$i} * 100) / 7) * 1%))
+
+    &.energy
+      $active-color: #eab308
+      &.progress-#{$i}
+        background-image: linear-gradient(#fff, #fff), conic-gradient($active-color calc(((#{$i} * 100) / 7) * 1%), $passive-color calc(((#{$i} * 100) / 7) * 1%))
+
+    &.fighting
+      $active-color: #ef4444
+      &.progress-#{$i}
+        background-image: linear-gradient(#fff, #fff), conic-gradient($active-color calc(((#{$i} * 100) / 7) * 1%), $passive-color calc(((#{$i} * 100) / 7) * 1%))
+
+    &.intelligence
+      $active-color: #a855f7
+      &.progress-#{$i}
+        background-image: linear-gradient(#fff, #fff), conic-gradient($active-color calc(((#{$i} * 100) / 7) * 1%), $passive-color calc(((#{$i} * 100) / 7) * 1%))
+
+    &.speed
+      $active-color: #22c55e
+      &.progress-#{$i}
+        background-image: linear-gradient(#fff, #fff), conic-gradient($active-color calc(((#{$i} * 100) / 7) * 1%), $passive-color calc(((#{$i} * 100) / 7) * 1%))
+
+    &.strength
+      $active-color: #78716c
+      &.progress-#{$i}
+        background-image: linear-gradient(#fff, #fff), conic-gradient($active-color calc(((#{$i} * 100) / 7) * 1%), $passive-color calc(((#{$i} * 100) / 7) * 1%))

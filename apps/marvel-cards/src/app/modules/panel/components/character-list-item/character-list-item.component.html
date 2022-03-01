@@ -1,7 +1,8 @@
 <div *ngIf="character?.id" class="w-full flex flex-wrap">
   <angular-marvel-character-list-item-picture [slug]="character.slug"></angular-marvel-character-list-item-picture>
-  <div class="p-3">
-    <div class="text-sm">{{ character.identity }}</div>
-    <div class="text-lg font-bold">{{ character.name }}</div>
+  <div class="p-3 w-full flex flex-wrap">
+    <div class="text-sm w-full">{{ character.identity ? character.identity : character.name }}</div>
+    <div class="text-lg font-bold w-full">{{ character.name }}</div>
+    <angular-marvel-character-list-item-skills class="mt-1" [skill]="character.skill"></angular-marvel-character-list-item-skills>
   </div>
 </div>
