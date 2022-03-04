@@ -1,0 +1,10 @@
+<div class="background" *ngIf="visible" (click)="close()" [ngClass]="{ 'active': visible }"></div>
+
+<main class="container" [ngClass]="alert.type" *ngIf="visible">
+  <img src="assets/images/icons/gray/close.svg" alt="Close Alert" class="close" (click)="close()">
+  <div class="flex items-center">
+    <angular-marvel-icon [type]="alert.type"></angular-marvel-icon>
+    <h3 class="title ml-2">{{ alert.type | titlecase }}</h3>
+  </div>
+  <p class="description">{{ alert.message }}</p>
+</main>

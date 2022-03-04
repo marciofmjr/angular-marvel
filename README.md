@@ -6,6 +6,15 @@
 # Angular 13
 An app to study Angular and modern web features
 
+## Preview
+![Preview](https://raw.githubusercontent.com/marciofmjr/angular-marvel/master/preview.gif)
+
+## Running
+exec this command to run application:
+```bash
+npm run dev
+```
+
 ### Features
 I'll use all this features in this project
 
@@ -14,17 +23,13 @@ I'll use all this features in this project
 - [x] modules
 - [x] components
 - [x] services
-- [ ] pipes
-- [ ] directives
+- [x] pipes
+- [x] directives
 - [ ] custom pipes
 - [ ] custom directives
 - [ ] resolvers
-- [ ] guards
+- [x] guards
 - [x] lazy loading
-
-#### Custom
-- [ ] custom pipe
-- [ ] custom directive
 
 #### Forms
 - [x] template driven forms
